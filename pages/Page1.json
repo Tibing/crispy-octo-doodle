@@ -67,8 +67,18 @@
                     {
                       "widgetName": "Table1",
                       "columnOrder": [
-                        "department_id",
-                        "department_name",
+                        "id",
+                        "name",
+                        "createdAt",
+                        "updatedAt",
+                        "status",
+                        "gender",
+                        "avatar",
+                        "email",
+                        "address",
+                        "role",
+                        "dob",
+                        "phoneNo",
                         "customColumn1"
                       ],
                       "dynamicPropertyPathList": [
@@ -103,10 +113,40 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.department_id.computedValue"
+                          "key": "primaryColumns.id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.department_name.computedValue"
+                          "key": "primaryColumns.name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.createdAt.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.updatedAt.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.status.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.gender.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.avatar.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.email.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.address.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.role.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.dob.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.phoneNo.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -132,10 +172,10 @@
                           "isCellVisible": true,
                           "buttonColor": "#DD4B34"
                         },
-                        "department_id": {
+                        "id": {
                           "index": 0,
                           "width": 150,
-                          "id": "department_id",
+                          "id": "id",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -143,15 +183,16 @@
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "department_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.department_id))}}",
-                          "isCellVisible": true
+                          "label": "id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
                         },
-                        "department_name": {
+                        "name": {
                           "index": 1,
                           "width": 150,
-                          "id": "department_name",
+                          "id": "name",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -159,10 +200,181 @@
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "department_name",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.department_name))}}",
-                          "isCellVisible": true
+                          "label": "name",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                        },
+                        "createdAt": {
+                          "index": 2,
+                          "width": 150,
+                          "id": "createdAt",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "createdAt",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}"
+                        },
+                        "updatedAt": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "updatedAt",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "updatedAt",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.updatedAt))}}"
+                        },
+                        "status": {
+                          "index": 4,
+                          "width": 150,
+                          "id": "status",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "status",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.status))}}"
+                        },
+                        "gender": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "gender",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "gender",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gender))}}"
+                        },
+                        "avatar": {
+                          "index": 6,
+                          "width": 150,
+                          "id": "avatar",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "avatar",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.avatar))}}"
+                        },
+                        "email": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "email",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "email",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.email))}}"
+                        },
+                        "address": {
+                          "index": 8,
+                          "width": 150,
+                          "id": "address",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "address",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.address))}}"
+                        },
+                        "role": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "role",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "role",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.role))}}"
+                        },
+                        "dob": {
+                          "index": 10,
+                          "width": 150,
+                          "id": "dob",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "dob",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.dob))}}"
+                        },
+                        "phoneNo": {
+                          "index": 11,
+                          "width": 150,
+                          "id": "phoneNo",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "phoneNo",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.phoneNo))}}"
                         }
                       },
                       "delimiter": ",",
@@ -191,7 +403,7 @@
                       "textSize": "PARAGRAPH",
                       "widgetId": "jabdu9f16g",
                       "isVisibleFilters": true,
-                      "tableData": "{{}}",
+                      "tableData": "{{select_users.data}}",
                       "isVisible": "true",
                       "label": "Data",
                       "searchKey": "",
@@ -1415,6 +1627,16 @@
                 "col_select.selectedOptionValue",
                 "Table1.pageSize"
               ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Page1_select_users",
+              "name": "select_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
