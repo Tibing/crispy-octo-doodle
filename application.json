@@ -1,0 +1,20 @@
+{
+  "isPublic": true,
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#D9E7FF",
+  "icon": "mug",
+  "slug": "untitled-application-2",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "createdAt": {
+    "seconds": 1629122879,
+    "nanos": 498000000
+  },
+  "deleted": false
+}
